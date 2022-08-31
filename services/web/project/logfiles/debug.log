@@ -1,0 +1,118 @@
+2022-08-18 18:23:01,682 - werkzeug - INFO -  * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+2022-08-18 18:23:01,684 - werkzeug - INFO -  * Restarting with stat
+2022-08-18 18:23:03,034 - werkzeug - WARNING -  * Debugger is active!
+2022-08-18 18:23:03,041 - werkzeug - INFO -  * Debugger PIN: 741-574-410
+2022-08-18 18:23:44,963 - werkzeug - INFO - 127.0.0.1 - - [18/Aug/2022 18:23:44] "POST /admin/student/ HTTP/1.1" 200 -
+2022-08-18 18:23:48,724 - werkzeug - INFO - 127.0.0.1 - - [18/Aug/2022 18:23:48] "GET /admin/student/0060 HTTP/1.1" 200 -
+2022-08-18 18:23:55,317 - werkzeug - INFO - 127.0.0.1 - - [18/Aug/2022 18:23:55] "PUT /admin/student/0060 HTTP/1.1" 200 -
+2022-08-18 18:23:58,217 - werkzeug - INFO - 127.0.0.1 - - [18/Aug/2022 18:23:58] "DELETE /admin/student/0060 HTTP/1.1" 200 -
+2022-08-18 18:24:02,995 - werkzeug - INFO - 127.0.0.1 - - [18/Aug/2022 18:24:02] "GET /admin/student/?search=赵六 HTTP/1.1" 200 -
+2022-08-18 18:24:14,966 - werkzeug - INFO - 127.0.0.1 - - [18/Aug/2022 18:24:14] "GET /admin/logout/ HTTP/1.1" 200 -
+2022-08-18 18:24:15,953 - werkzeug - INFO - 127.0.0.1 - - [18/Aug/2022 18:24:15] "GET /admin/logout/ HTTP/1.1" 200 -
+2022-08-18 18:35:51,075 - werkzeug - INFO -  * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+2022-08-18 18:35:51,077 - werkzeug - INFO -  * Restarting with stat
+2022-08-18 18:35:52,397 - werkzeug - WARNING -  * Debugger is active!
+2022-08-18 18:35:52,403 - werkzeug - INFO -  * Debugger PIN: 741-574-410
+2022-08-18 18:37:35,231 - werkzeug - INFO - 127.0.0.1 - - [18/Aug/2022 18:37:35] "POST /student/login/ HTTP/1.1" 200 -
+2022-08-19 09:54:42,739 - werkzeug - INFO -  * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+2022-08-19 09:54:42,741 - werkzeug - INFO -  * Restarting with stat
+2022-08-19 09:54:44,211 - werkzeug - WARNING -  * Debugger is active!
+2022-08-19 09:54:44,221 - werkzeug - INFO -  * Debugger PIN: 741-574-410
+2022-08-19 09:54:46,114 - werkzeug - INFO - 127.0.0.1 - - [19/Aug/2022 09:54:46] "POST /admin/login/ HTTP/1.1" 200 -
+2022-08-19 09:55:18,828 - werkzeug - INFO -  * Detected change in 'D:\\PycharmProjects\\courseSystem\\blueprints\\admin.py', reloading
+2022-08-19 09:55:18,947 - werkzeug - INFO -  * Restarting with stat
+2022-08-19 09:55:20,466 - werkzeug - WARNING -  * Debugger is active!
+2022-08-19 09:55:20,474 - werkzeug - INFO -  * Debugger PIN: 741-574-410
+2022-08-19 09:55:24,690 - werkzeug - INFO - 127.0.0.1 - - [19/Aug/2022 09:55:24] "[31m[1mPOST /admin/login/ HTTP/1.1[0m" 400 -
+2022-08-19 09:57:00,460 - werkzeug - INFO -  * Detected change in 'D:\\PycharmProjects\\courseSystem\\blueprints\\admin.py', reloading
+2022-08-19 09:57:00,621 - werkzeug - INFO -  * Restarting with stat
+2022-08-19 09:57:02,214 - werkzeug - WARNING -  * Debugger is active!
+2022-08-19 09:57:02,221 - werkzeug - INFO -  * Debugger PIN: 741-574-410
+2022-08-19 09:57:03,116 - werkzeug - INFO - 127.0.0.1 - - [19/Aug/2022 09:57:03] "POST /admin/login/ HTTP/1.1" 200 -
+2022-08-19 10:15:44,694 - werkzeug - INFO - 127.0.0.1 - - [19/Aug/2022 10:15:44] "POST /admin/login/ HTTP/1.1" 200 -
+2022-08-19 10:19:37,630 - werkzeug - INFO - 127.0.0.1 - - [19/Aug/2022 10:19:37] "GET /admin/student/?search=赵六 HTTP/1.1" 200 -
+2022-08-19 10:20:35,666 - werkzeug - INFO - 127.0.0.1 - - [19/Aug/2022 10:20:35] "GET /admin/student/?search= HTTP/1.1" 200 -
+2022-08-19 10:20:50,270 - werkzeug - INFO - 127.0.0.1 - - [19/Aug/2022 10:20:50] "GET /admin/student/ HTTP/1.1" 200 -
+2022-08-19 10:24:37,394 - werkzeug - INFO - 127.0.0.1 - - [19/Aug/2022 10:24:37] "GET /admin/student/?search=赵六 HTTP/1.1" 200 -
+2022-08-19 10:28:59,204 - werkzeug - INFO - 127.0.0.1 - - [19/Aug/2022 10:28:59] "GET /admin/student/ HTTP/1.1" 200 -
+2022-08-19 10:37:28,712 - werkzeug - INFO - 127.0.0.1 - - [19/Aug/2022 10:37:28] "GET /admin/student/?search=xxx HTTP/1.1" 200 -
+2022-08-19 10:43:14,253 - werkzeug - INFO - 127.0.0.1 - - [19/Aug/2022 10:43:14] "POST /admin/student/ HTTP/1.1" 200 -
+2022-08-19 10:45:30,834 - werkzeug - INFO - 127.0.0.1 - - [19/Aug/2022 10:45:30] "POST /admin/student/ HTTP/1.1" 200 -
+2022-08-19 10:47:57,753 - werkzeug - INFO - 127.0.0.1 - - [19/Aug/2022 10:47:57] "POST /admin/student/ HTTP/1.1" 200 -
+2022-08-19 10:48:11,174 - werkzeug - INFO - 127.0.0.1 - - [19/Aug/2022 10:48:11] "POST /admin/student/ HTTP/1.1" 200 -
+2022-08-19 10:48:19,599 - werkzeug - INFO - 127.0.0.1 - - [19/Aug/2022 10:48:19] "POST /admin/student/ HTTP/1.1" 200 -
+2022-08-19 10:52:54,707 - werkzeug - INFO - 127.0.0.1 - - [19/Aug/2022 10:52:54] "GET /admin/student/0066 HTTP/1.1" 200 -
+2022-08-19 10:54:56,694 - werkzeug - INFO - 127.0.0.1 - - [19/Aug/2022 10:54:56] "GET /admin/student/0065 HTTP/1.1" 200 -
+2022-08-19 10:57:16,820 - werkzeug - INFO - 127.0.0.1 - - [19/Aug/2022 10:57:16] "PUT /admin/student/0066 HTTP/1.1" 200 -
+2022-08-19 11:02:11,065 - werkzeug - INFO - 127.0.0.1 - - [19/Aug/2022 11:02:11] "DELETE /admin/student/0060 HTTP/1.1" 200 -
+2022-08-19 11:05:03,507 - werkzeug - INFO - 127.0.0.1 - - [19/Aug/2022 11:05:03] "GET /admin/course/?search=机械 HTTP/1.1" 200 -
+2022-08-19 11:07:07,423 - werkzeug - INFO - 127.0.0.1 - - [19/Aug/2022 11:07:07] "GET /admin/course/?search=xxx HTTP/1.1" 200 -
+2022-08-19 11:07:31,882 - werkzeug - INFO - 127.0.0.1 - - [19/Aug/2022 11:07:31] "GET /admin/course/ HTTP/1.1" 200 -
+2022-08-19 11:12:15,017 - werkzeug - INFO - 127.0.0.1 - - [19/Aug/2022 11:12:15] "POST /admin/course/ HTTP/1.1" 200 -
+2022-08-19 11:12:28,466 - werkzeug - INFO - 127.0.0.1 - - [19/Aug/2022 11:12:28] "POST /admin/course/ HTTP/1.1" 200 -
+2022-08-19 11:13:59,053 - werkzeug - INFO - 127.0.0.1 - - [19/Aug/2022 11:13:59] "POST /admin/course/ HTTP/1.1" 200 -
+2022-08-19 11:14:49,319 - werkzeug - INFO - 127.0.0.1 - - [19/Aug/2022 11:14:49] "POST /admin/course/ HTTP/1.1" 200 -
+2022-08-19 11:15:02,536 - werkzeug - INFO - 127.0.0.1 - - [19/Aug/2022 11:15:02] "POST /admin/course/ HTTP/1.1" 200 -
+2022-08-19 11:16:15,479 - werkzeug - INFO - 127.0.0.1 - - [19/Aug/2022 11:16:15] "GET /admin/course/1234 HTTP/1.1" 200 -
+2022-08-19 11:16:22,787 - werkzeug - INFO - 127.0.0.1 - - [19/Aug/2022 11:16:22] "GET /admin/course/6666 HTTP/1.1" 200 -
+2022-08-19 11:17:15,119 - werkzeug - INFO - 127.0.0.1 - - [19/Aug/2022 11:17:15] "GET /admin/course/6666 HTTP/1.1" 200 -
+2022-08-19 11:17:20,691 - werkzeug - INFO - 127.0.0.1 - - [19/Aug/2022 11:17:20] "GET /admin/course/66 HTTP/1.1" 200 -
+2022-08-19 11:24:38,776 - werkzeug - INFO - 127.0.0.1 - - [19/Aug/2022 11:24:38] "PUT /admin/course/6666 HTTP/1.1" 200 -
+2022-08-19 11:25:57,510 - werkzeug - INFO - 127.0.0.1 - - [19/Aug/2022 11:25:57] "PUT /admin/course/6666 HTTP/1.1" 200 -
+2022-08-19 11:29:47,758 - werkzeug - INFO - 127.0.0.1 - - [19/Aug/2022 11:29:47] "PUT /admin/course/6666 HTTP/1.1" 200 -
+2022-08-19 11:31:08,295 - werkzeug - INFO - 127.0.0.1 - - [19/Aug/2022 11:31:08] "PUT /admin/course/6666 HTTP/1.1" 200 -
+2022-08-19 11:41:17,200 - werkzeug - INFO - 127.0.0.1 - - [19/Aug/2022 11:41:17] "PUT /admin/course/6666 HTTP/1.1" 200 -
+2022-08-19 15:19:45,664 - werkzeug - INFO - 127.0.0.1 - - [19/Aug/2022 15:19:45] "PUT /admin/course/6666 HTTP/1.1" 200 -
+2022-08-19 15:20:06,658 - werkzeug - INFO - 127.0.0.1 - - [19/Aug/2022 15:20:06] "PUT /admin/course/6666 HTTP/1.1" 200 -
+2022-08-19 15:21:08,172 - werkzeug - INFO - 127.0.0.1 - - [19/Aug/2022 15:21:08] "PUT /admin/course/6666 HTTP/1.1" 200 -
+2022-08-19 15:24:20,172 - werkzeug - INFO -  * Detected change in 'D:\\PycharmProjects\\courseSystem\\models\\models.py', reloading
+2022-08-19 15:24:20,707 - werkzeug - INFO -  * Restarting with stat
+2022-08-19 15:24:22,342 - werkzeug - WARNING -  * Debugger is active!
+2022-08-19 15:24:22,350 - werkzeug - INFO -  * Debugger PIN: 741-574-410
+2022-08-19 15:25:20,790 - werkzeug - INFO -  * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+2022-08-19 15:25:20,792 - werkzeug - INFO -  * Restarting with stat
+2022-08-19 15:25:22,183 - werkzeug - WARNING -  * Debugger is active!
+2022-08-19 15:25:22,193 - werkzeug - INFO -  * Debugger PIN: 741-574-410
+2022-08-19 15:25:30,361 - werkzeug - INFO - 127.0.0.1 - - [19/Aug/2022 15:25:30] "PUT /admin/course/6666 HTTP/1.1" 200 -
+2022-08-19 15:25:34,470 - werkzeug - INFO - 127.0.0.1 - - [19/Aug/2022 15:25:34] "PUT /admin/course/6666 HTTP/1.1" 200 -
+2022-08-19 15:26:32,777 - werkzeug - INFO -  * Detected change in 'D:\\PycharmProjects\\courseSystem\\schemas\\schemas.py', reloading
+2022-08-19 15:26:32,885 - werkzeug - INFO -  * Restarting with stat
+2022-08-19 15:26:34,436 - werkzeug - WARNING -  * Debugger is active!
+2022-08-19 15:26:34,442 - werkzeug - INFO -  * Debugger PIN: 741-574-410
+2022-08-19 15:26:43,803 - werkzeug - INFO - 127.0.0.1 - - [19/Aug/2022 15:26:43] "PUT /admin/course/6666 HTTP/1.1" 200 -
+2022-08-19 15:26:50,732 - werkzeug - INFO - 127.0.0.1 - - [19/Aug/2022 15:26:50] "PUT /admin/course/6666 HTTP/1.1" 200 -
+2022-08-19 15:26:51,795 - werkzeug - INFO - 127.0.0.1 - - [19/Aug/2022 15:26:51] "PUT /admin/course/6666 HTTP/1.1" 200 -
+2022-08-19 15:26:52,700 - werkzeug - INFO - 127.0.0.1 - - [19/Aug/2022 15:26:52] "PUT /admin/course/6666 HTTP/1.1" 200 -
+2022-08-19 15:26:53,413 - werkzeug - INFO - 127.0.0.1 - - [19/Aug/2022 15:26:53] "PUT /admin/course/6666 HTTP/1.1" 200 -
+2022-08-19 15:26:54,158 - werkzeug - INFO - 127.0.0.1 - - [19/Aug/2022 15:26:54] "PUT /admin/course/6666 HTTP/1.1" 200 -
+2022-08-19 15:26:54,841 - werkzeug - INFO - 127.0.0.1 - - [19/Aug/2022 15:26:54] "PUT /admin/course/6666 HTTP/1.1" 200 -
+2022-08-19 15:26:55,590 - werkzeug - INFO - 127.0.0.1 - - [19/Aug/2022 15:26:55] "PUT /admin/course/6666 HTTP/1.1" 200 -
+2022-08-19 15:26:56,283 - werkzeug - INFO - 127.0.0.1 - - [19/Aug/2022 15:26:56] "PUT /admin/course/6666 HTTP/1.1" 200 -
+2022-08-19 15:26:57,047 - werkzeug - INFO - 127.0.0.1 - - [19/Aug/2022 15:26:57] "PUT /admin/course/6666 HTTP/1.1" 200 -
+2022-08-19 15:27:15,284 - werkzeug - INFO -  * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+2022-08-19 15:27:15,286 - werkzeug - INFO -  * Restarting with stat
+2022-08-19 15:27:16,620 - werkzeug - WARNING -  * Debugger is active!
+2022-08-19 15:27:16,626 - werkzeug - INFO -  * Debugger PIN: 741-574-410
+2022-08-19 15:27:29,898 - werkzeug - INFO - 127.0.0.1 - - [19/Aug/2022 15:27:29] "PUT /admin/course/6666 HTTP/1.1" 200 -
+2022-08-19 15:28:08,222 - werkzeug - INFO -  * Detected change in 'D:\\PycharmProjects\\courseSystem\\schemas\\schemas.py', reloading
+2022-08-19 15:28:08,428 - werkzeug - INFO -  * Restarting with stat
+2022-08-19 15:28:10,018 - werkzeug - WARNING -  * Debugger is active!
+2022-08-19 15:28:10,025 - werkzeug - INFO -  * Debugger PIN: 741-574-410
+2022-08-19 15:28:11,730 - werkzeug - INFO - 127.0.0.1 - - [19/Aug/2022 15:28:11] "PUT /admin/course/6666 HTTP/1.1" 200 -
+2022-08-19 15:28:13,518 - werkzeug - INFO - 127.0.0.1 - - [19/Aug/2022 15:28:13] "PUT /admin/course/6666 HTTP/1.1" 200 -
+2022-08-19 15:28:14,718 - werkzeug - INFO - 127.0.0.1 - - [19/Aug/2022 15:28:14] "PUT /admin/course/6666 HTTP/1.1" 200 -
+2022-08-19 15:28:15,755 - werkzeug - INFO - 127.0.0.1 - - [19/Aug/2022 15:28:15] "PUT /admin/course/6666 HTTP/1.1" 200 -
+2022-08-19 15:29:49,650 - werkzeug - INFO -  * Detected change in 'D:\\PycharmProjects\\courseSystem\\schemas\\schemas.py', reloading
+2022-08-19 15:29:49,772 - werkzeug - INFO -  * Restarting with stat
+2022-08-19 15:29:51,486 - werkzeug - WARNING -  * Debugger is active!
+2022-08-19 15:29:51,494 - werkzeug - INFO -  * Debugger PIN: 741-574-410
+2022-08-19 15:29:54,661 - werkzeug - INFO - 127.0.0.1 - - [19/Aug/2022 15:29:54] "PUT /admin/course/6666 HTTP/1.1" 200 -
+2022-08-19 15:30:02,778 - werkzeug - INFO - 127.0.0.1 - - [19/Aug/2022 15:30:02] "PUT /admin/course/6666 HTTP/1.1" 200 -
+2022-08-19 15:30:08,838 - werkzeug - INFO - 127.0.0.1 - - [19/Aug/2022 15:30:08] "POST /admin/login/ HTTP/1.1" 200 -
+2022-08-19 15:30:12,427 - werkzeug - INFO - 127.0.0.1 - - [19/Aug/2022 15:30:12] "PUT /admin/course/6666 HTTP/1.1" 200 -
+2022-08-19 15:30:37,285 - werkzeug - INFO - 127.0.0.1 - - [19/Aug/2022 15:30:37] "PUT /admin/course/6666 HTTP/1.1" 200 -
+2022-08-19 15:31:32,777 - werkzeug - INFO -  * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+2022-08-19 15:31:32,779 - werkzeug - INFO -  * Restarting with stat
+2022-08-19 15:31:34,148 - werkzeug - WARNING -  * Debugger is active!
+2022-08-19 15:31:34,155 - werkzeug - INFO -  * Debugger PIN: 741-574-410
+2022-08-19 15:31:57,675 - werkzeug - INFO - 127.0.0.1 - - [19/Aug/2022 15:31:57] "PUT /admin/course/6666 HTTP/1.1" 200 -
