@@ -14,5 +14,8 @@ class Config(object):
     SQLALCHEMY_TRACK_MODIFICATIONS = False
     # DEBUG = True
     SECRET_KEY = 'SAFDAEF12E'
-    SESSION_COOKIE_SAMESITE=None
-    SESSION_COOKIE_SECURE=True
+    # NAMEKO_AMQP_URI=os.getenv("NAMEKO_AMQP_URI", "amqp://localhost")
+    # NAMEKO_AMQP_URI="amqp://localhost"
+    NAMEKO_AMQP_URI="amqp://root:root@rabbitmq"
+    # NAMEKO_AMQP_URI="amqp://guest:guest@localhost"
+    # SESSION_COOKIE_SECURE=True

@@ -1,8 +1,35 @@
-version: '3.8'
+version: '3'
 
 services:
+  db:
+    image: postgres:13-alpine
+    volumes:
+      - postgres_data_prod:/var/lib/postgresql/data/
+    env_file:
+      - ./.env.prod.db
+  rabbitmq:
+    image: "rabbitmq"
+    environment:
+      - RABBITMQ_DEFAULT_USER=root
+      - RABBITMQ_DEFAULT_PASS=root
+  microservice-admin:
+    build: 
+      context: ./services/web
+      dockerfile: Dockerfile-1
+    depends_on:
+      - rabbitmq
+    restart: always
+  microservice-student:
+    build: 
+      context: ./services/web
+      dockerfile: Dockerfile-2
+    depends_on:
+      - rabbitmq
+    restart: always
   web:
-    build: ./services/web
+    build: 
+      context: ./services/web
+      dockerfile: Dockerfile-0
     command: gunicorn --bind 0.0.0.0:5000 manage:app
     ports:
       - 5000:5000
@@ -10,12 +37,9 @@ services:
       - ./.env.prod
     depends_on:
       - db
-  db:
-    image: postgres:13-alpine
-    volumes:
-      - postgres_data_prod:/var/lib/postgresql/data/
-    env_file:
-      - ./.env.prod.db
-
+      - rabbitmq
+    restart: always
+    
 volumes:
   postgres_data_prod:
+

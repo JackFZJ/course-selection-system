@@ -1,5 +1,5 @@
 from flask import Flask
-from project.extensions import db, ma, mg, cors
+from project.extensions import db, ma, mg, cors, rpc
 from project.blueprints import admin_bp, stu_bp
 # 数据库迁移需要导入模型
 import project.models as models 
@@ -21,6 +21,7 @@ mg.init_app(app, db)
 # 在db绑定之后绑定
 ma.init_app(app)
 cors.init_app(app,supports_credentials=True)
+rpc.init_app(app)
 # cors.init_app(app)
 
 app.register_blueprint(admin_bp)

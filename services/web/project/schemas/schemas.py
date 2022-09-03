@@ -2,7 +2,6 @@
 """
 序列化和反序列化
 """
-from flask import request
 from marshmallow_sqlalchemy import SQLAlchemySchema, auto_field
 from project.models import AdminModel, StuModel, CourseModel
 from marshmallow import post_load, fields, validate, validates_schema, ValidationError, validates
@@ -62,7 +61,7 @@ class StudentSchema(SQLAlchemySchema):
     # 针对单个指定字段的值进行验证
     @validates("student_id")
     def validate_student_id(self, student_id):
-        if request.method == 'POST' and StuModel.query.filter_by(student_id=student_id).first():
+        if StuModel.query.filter_by(student_id=student_id).first():
             raise ValidationError("学号已经被注册！")
         return student_id
 
@@ -99,6 +98,7 @@ class CourseSchema(SQLAlchemySchema):
     # 针对单个指定字段的值进行验证
     @validates("course_id")
     def validate_student_id(self, course_id):
-        if request.method == 'POST' and CourseModel.query.filter_by(course_id=course_id).first():
+        # if request.method == 'POST' and CourseModel.query.filter_by(course_id=course_id).first():
+        if CourseModel.query.filter_by(course_id=course_id).first():
             raise ValidationError("课程号已经被注册！")
         return course_id

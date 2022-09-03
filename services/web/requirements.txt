@@ -14,3 +14,5 @@ SQLAlchemy==1.4.39
 Werkzeug==2.2.1
 WTForms==3.0.1
 gunicorn
+flask_nameko
+nameko
