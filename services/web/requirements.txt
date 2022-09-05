@@ -16,3 +16,4 @@ WTForms==3.0.1
 gunicorn
 flask_nameko
 nameko
+flask_jwt_extended

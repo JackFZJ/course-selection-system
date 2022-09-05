@@ -5,6 +5,11 @@ from werkzeug.security import check_password_hash, generate_password_hash
 from marshmallow import ValidationError
 from project.forms import *
 from project.app import app
+from flask_jwt_extended import create_access_token
+from flask_jwt_extended import get_jwt
+from datetime import datetime
+from datetime import timezone
+
 
 class services_student(object):
     name = "services_student"
@@ -30,9 +35,11 @@ class services_student(object):
         self.push_app_context()
         student = StuModel.query.filter_by(student_id=data.get('id')).first()
         if student and check_password_hash(student.password, data.get('password')):
+            access_token = create_access_token(identity=student.id,additional_claims={"is_student": True})
             return {
                 'code': 0,
-                'msg': '登录成功'
+                'msg': '登录成功',
+                'access_token': access_token
             }
         else:
             return {
@@ -41,18 +48,12 @@ class services_student(object):
             }
     
     @rpc
-    def student_logout(self,student_id):
+    def student_logout(self,jti):
         self.push_app_context()
-        if student_id:
-            return {
-                'code': 0,
-                'msg': '注销成功'
-            }
-        else:
-            return {
-                'code': 1,
-                'msg': '注销失败'
-            }
+        now = datetime.now(timezone.utc)
+        db.session.add(TokenBlocklist(jti=jti, created_at=now))
+        db.session.commit()
+        return {'code':0,'msg':'注销成功'}
 
     @rpc
     def student_get_courses(self,student_id,search):

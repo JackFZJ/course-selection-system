@@ -5,8 +5,10 @@ from werkzeug.security import check_password_hash, generate_password_hash
 from marshmallow import ValidationError
 from project.forms import *
 from nameko.rpc import rpc, RpcProxy
-import project.config
-
+from flask_jwt_extended import create_access_token
+from flask_jwt_extended import get_jwt
+from datetime import datetime
+from datetime import timezone
 
 class services_admin(object):
     name = "services_admin"
@@ -33,9 +35,11 @@ class services_admin(object):
         admin = AdminModel.query.filter_by(name=data.get('name')).first()
         if admin and check_password_hash(admin.password, data.get('password')):
             # self.set_session(name='admin_name',value=admin.name)
+            access_token = create_access_token(identity=admin.id,additional_claims={"is_admin": True})
             return {
                 'code': 0,
-                'msg': '登录成功'
+                'msg': '登录成功',
+                'access_token': access_token
             }
         else:
             return {
@@ -44,18 +48,12 @@ class services_admin(object):
             }
 
     @rpc
-    def admin_logout(self,admin_name):
+    def admin_logout(self,jti):
         self.push_app_context()
-        if admin_name:
-            return {
-                'code': 0,
-                'msg': '管理员注销成功'
-            }
-        else:
-            return {
-                'code': 1,
-                'msg': '管理员注销失败'
-            }
+        now = datetime.now(timezone.utc)
+        db.session.add(TokenBlocklist(jti=jti, created_at=now))
+        db.session.commit()
+        return {'code':0,'msg':'注销成功'}
     
     @rpc
     def admin_add_student(self,data):

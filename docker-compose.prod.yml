@@ -32,7 +32,7 @@ services:
       dockerfile: Dockerfile-0
     command: gunicorn --bind 0.0.0.0:5000 manage:app
     ports:
-      - 5000:5000
+      - 8052:5000
     env_file:
       - ./.env.prod
     depends_on:
