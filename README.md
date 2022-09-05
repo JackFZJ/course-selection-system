@@ -4,8 +4,10 @@
 :school: I am the author:fangzhujun,a master of East China University of science and technology.  
 :gift_heart: I push this project to github on August 31, 2022,and Ihope it would be helpful to you.  
 ## Changelog
-This project was last updated on September 3, 2022:  
+This project was last updated on September 5, 2022:  
 - 09/01/2022:  
   - Updated the README.md to add Changelog.
 - 09/03/2022:  
   - add microservices based on nameko and rabbitmq.
+- 09/05/2022:  
+  - change the authentication method from cookie to token.
